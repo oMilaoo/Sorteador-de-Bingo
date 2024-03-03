@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sorteador de Bingo TLC </title>
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+            <a href="inicio.html" class="logo"><img src="img/logofim.png" alt="logo"></a>
+            <ul class="menu">
+                <li class="nav-item"><a href="index.html">Jogar</a></li>
+                <li class="nav-item"><a href="">Prêmios</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="home">
+            <div class="home-text">
+                <h1 class="text-h1">TLC Pascoa</h1>
+            </div>
+            <div class="carrosel">
+                <div class="container" id="img">
+                    <img src="img/carrosel1.jpg" alt="">
+                    <img src="img/carrosel2.jpg" alt="">
+                    <img src="img/logofim.png" alt="">
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+    
+</body>
+
+<script>
+  const imgs = document.getElementById("img");
+  const img = document.querySelectorAll("#img img");
+  
+  let idx = 1;
+
+  function carrosel(){
+        idx++;
+
+        if(idx > img.length - 0){
+            idx = 0;
+        }
+
+        imgs.style.transform = `translateX(${-idx * 560}px)`;
+  }
+
+  setInterval(carrosel, 1800);
+</script>
+</body>
+</html>
