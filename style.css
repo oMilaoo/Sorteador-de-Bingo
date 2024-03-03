@@ -111,3 +111,19 @@ img {
     width: 1080px;
     height: 960px;
 }
+
+.premios {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5% 10%;
+  
+  }
+  .premios-text .premios-h1 {
+    font-size: 10rem;
+    font-family: 'Balmy', sans-serif;
+    line-height: 2.5rem;
+    color: #ffff;
+  }
