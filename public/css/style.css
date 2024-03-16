@@ -13,10 +13,10 @@ html {
   scroll-behavior: smooth;
 }
 :root {
-  --azul: #0b0ca6;
-  --azul-claro: #5271ff;
-  --azul-second: #3c5ffd;
-  --white: #ffff;
+  --primary: #e8acb9;
+  --marrom: #432015;
+  --secondary: #436d7b;
+  --marrom-claro: #ae7252;
   --dark: #;
   font-size: 62.5%;
 }
@@ -24,6 +24,7 @@ html {
 body {
   background-image: url(../assets/bg.png);
     background-size: cover;
+    backdrop-filter: blur(3px);
   
 }
 
@@ -89,27 +90,22 @@ body {
     font-size: 10rem;
     font-family: 'Balmy', sans-serif;
     line-height: 2.5rem;
-    color: #ffff;
+    color: var(--marrom);
 }
 
-.carrosel{
-    box-shadow: 2px 2px 4px black;
-    overflow: hidden;
-    width: 1080px;
-    height: 960px;
-    margin-right: 20px;
+.carrosel {
+  width: 100%;
+  overflow: hidden;
 }
 
-.container{
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    transform: translateX(0);
+.container {
+  display: flex;
+  transition: transform 0.5s ease;
 }
 
-img {
-    object-fit: cover;
-    width: 1080px;
-    height: 960px;
+.container img {
+  width: 100%;
+  height: auto;
 }
 
 .premios {
@@ -120,12 +116,26 @@ img {
     justify-content: space-between;
     padding: 5% 10%;
   
-  }
-  .premios-text .premios-h1 {
+}
+.premios-text .premios-h1 {
     font-size: 10rem;
     font-family: 'Balmy', sans-serif;
     line-height: 2.5rem;
     color: #ffff;
-  }
+}
 
-  
+.container-product {
+  width: 800px;
+}
+
+.slider{
+  margin: 0 auto;
+  width: 800px;
+  height: 400px;
+}
+
+.slides{
+  width: 400%;
+  height: 400px;
+  display: flex;
+}
