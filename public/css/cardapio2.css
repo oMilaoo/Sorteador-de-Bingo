@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght#300;400;500;600;700;800&display=swap');
+
+:root {
+    --primary-color: #6537d1; 
+    --decent-color: #c8c3e7;
+    --accent-color: #fff;
+    --secondary-color: rgb(3, 36, 125);
+    --font-family: 'Poppins', sans-serif;
+    --text-color: #432015;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+body {
+    background: #fff;
+    padding: 0 9%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.header {
+   padding: 1rem 0;
+}
+
+.header-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.logo img{
+    width: 280px;
+    height: 150px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.slider-container {
+    width: 330px;
+    height: 22vh;
+    overflow: hidden;
+    
+}
+
+.slider-wrapper {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    flex: 0 0 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+    height: 22vh;
+  }
+
+.cover{
+    background-image: url('../../src/setup.jpg');
+    background-size: cover;
+    width: 330px;
+    height: 20vh;
+    background-position: center;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.cover--overlay img{
+    border-radius: 10px;
+}
+
+/*section heading */
+/* menu */
+
+.section-heading{
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 2rem 0 15px 0;
+    color: var(--text-color);
+    
+}
+
+
+
+.card--list{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem ;
+}
+
+.card {
+    width: 250px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 12px;
+    padding: 10px 1rem;
+    border-radius: 10px;
+    background: var(--accent-color);
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0 , 0.1);
+    text-align: center;
+    color: var(--text-color);
+}
+
+.card img {
+    width: 100%;
+}
+
+.card--title{
+    font-size: 25px;
+    color: var(--text-color);
+}
+
+.card--price{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    font-size: 28px;
+}
+
+.card--price .price{
+    color: var(--secondary-color);
+    font-weight: 600;
+    
+}
+
+
+
+
+

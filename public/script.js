@@ -19,7 +19,7 @@ const sliderWrapper = document.querySelector('.slider-wrapper');
                 goToSlide(index);
                 setTimeout(() => {
                     startInterval(); // Reinicia o intervalo após um curto período de tempo
-                }, 1000); // Tempo de pausa em milissegundos (aqui definido como 1 segundo)
+                }, 2000); // Tempo de pausa em milissegundos (aqui definido como 1 segundo)
             });
         });
 

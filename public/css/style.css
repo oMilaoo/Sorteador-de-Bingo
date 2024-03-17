@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@600&display=swap");
-@import url('https://fonts.cdnfonts.com/css/balmy');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -22,7 +22,7 @@ html {
 }
 
 body {
-  background-image: url(../assets/bg.png);
+  background-image: url(../../assets/bg.png);
     background-size: cover;
     backdrop-filter: blur(3px);
   
@@ -54,7 +54,7 @@ body {
 }
 
 .navigation ul li a {
-  color: var(--dark);
+  color: #fff;
   font-size: 2.5rem;
   font-weight: 500;
   transition: all 0.5s;
@@ -88,7 +88,7 @@ body {
   }
 .home-text .text-h1 {
     font-size: 10rem;
-    font-family: 'Balmy', sans-serif;
+    font-family: "Righteous", sans-serif;
     line-height: 2.5rem;
     color: var(--marrom);
 }
@@ -119,23 +119,53 @@ body {
 }
 .premios-text .premios-h1 {
     font-size: 10rem;
-    font-family: 'Balmy', sans-serif;
+    font-family:  "Righteous", sans-serif;
     line-height: 2.5rem;
-    color: #ffff;
+    color: var(--marrom);
 }
 
 .container-product {
   width: 800px;
 }
 
-.slider{
-  margin: 0 auto;
-  width: 800px;
-  height: 400px;
+
+
+.slider-container {
+  overflow: hidden;
+  
+  
 }
 
-.slides{
-  width: 400%;
-  height: 400px;
+.slider-wrapper {
+  width: 720px;
   display: flex;
+  transition: transform 0.5s ease;
+ 
+}
+
+.slide {
+  flex: 0 0 100%;
+  width: 720px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: white;
+  height: 600px;
+}
+
+.cover{
+  background-image: url('../../src/setup.jpg');
+  background-size: cover;
+  width: 720px;
+  height: 500px;
+  background-position: center;
+ 
+}
+
+.cover--overlay img{
+  width: 720px;
+  height: 500px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0 , 0.1);
 }

@@ -21,14 +21,78 @@
     <main>
         <section class="home">
             <div class="home-text">
-                <h1 class="text-h1">Pascoa</h1>
+                <h1 class="text-h1">Páscoa</h1>
             </div>
-            <div class="carrosel">
-                <div class="container" id="img">
-                    <img src="../assets/carrosel1.jpg" alt="">
-                    <img src="../assets/carrosel2.jpg" alt="">
-                    <img src="../assets/logofim.png" alt="">
-                    
+            <div class="slider-container">
+                <div class="slider-wrapper">
+                    <div class="slide">
+                        <section class="cover">
+                            <div class="cover--overlay">
+                                <img src="../assets/tlc2.png" alt="">
+                            </div>
+                        </section>
+                    </div>    
+                    <div class="slide">    
+                        <section class="cover">
+                            <div class="cover--overlay">
+                                <img src="../assets/tlc3.png" alt="">
+                            </div>
+                        </section> 
+                    </div>
+                    <div class="slide">    
+                        <section class="cover">
+                            <div class="cover--overlay">
+                                <img src="../assets/tlc4.png" alt="">
+                            </div>
+                        </section> 
+                    </div>
+                    <div class="slide">    
+                        <section class="cover">
+                            <div class="cover--overlay">
+                                <img src="../assets/tlc5.png" alt="">
+                            </div>
+                        </section> 
+                    </div>
+                    <div class="slide">    
+                        <section class="cover">
+                            <div class="cover--overlay">
+                                <img src="../assets/tlc6.png" alt="">
+                            </div>
+                        </section> 
+                        
+                    </div>
+                    <div class="slide">    
+                        <section class="cover">
+                            <div class="cover--overlay">
+                                <img src="../assets/tlc7.png" alt="">
+                            </div>
+                        </section> 
+                        
+                    </div>
+                    <!-- <div class="slide">    
+                        <section class="cover">
+                            <div class="cover--overlay">
+                                <img src="../assets/tlc8.png" alt="">
+                            </div>
+                        </section> 
+                        
+                    </div>
+                    <div class="slide">    
+                        <section class="cover">
+                            <div class="cover--overlay">
+                                <img src="../assets/tlc9.png" alt="">
+                            </div>
+                        </section> 
+                        
+                    </div>
+                    <div class="slide">    
+                        <section class="cover">
+                            <div class="cover--overlay">
+                                <img src="../assets/tlc10.png" alt="">
+                            </div>
+                        </section> 
+                        
+                    </div> -->
                 </div>
             </div>
         </section>
@@ -36,23 +100,6 @@
     
 </body>
 
-<script>
-  const imgs = document.getElementById("img");
-  const img = document.querySelectorAll("#img img");
-  
-  let idx = 1;
-
-  function carrosel(){
-        idx++;
-
-        if(idx > img.length - 0){
-            idx = 0;
-        }
-
-        imgs.style.transform = `translateX(${-idx * 560}px)`;
-  }
-
-  setInterval(carrosel, 1800);
-</script>
+<script src="../public/script.js"></script>
 </body>
 </html>

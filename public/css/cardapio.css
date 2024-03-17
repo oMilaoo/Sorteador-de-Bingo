@@ -1,116 +1,15 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@600&display=swap");
-@import url('https://fonts.cdnfonts.com/css/balmy');
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
-  list-style: none;
-  text-decoration: none;
-}
 
-html {
-  scroll-behavior: smooth;
-}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght#300;400;500;600;700;800&display=swap');
 
 :root {
-  --primary: #e8acb9;
-  --marrom: #432015;
-  --secondary: #436d7b;
-  --marrom-claro: #ae7252;
-  --dark: #;
-  font-size: 62.5%;
+  --primary-color: #6537d1; 
+  --decent-color: #c8c3e7;
+  --accent-color: #fff;
+  --secondary-color: rgb(9, 57, 189);
+  --font-family: 'Poppins', sans-serif;
+  --text-color: gray;
 }
-
-body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  
-}
-
-
-.navigation {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-left: 80px;
-  padding-right: 50px;
-  box-shadow: 0 0.5px 8px #ccc;
-  width: 100%;
-  background: blur;
-  backdrop-filter: blur(40px);
-  transition: all 0.5s;
-  position: fixed;
-}
-
-.navigation .logo img {
-  width: 200px;
-  height: 100px;
-}
-
-.navigation ul {
-  display: flex;
-  align-items: center;
-  gap: 60px;
-}
-
-.navigation ul li a {
-  color: var(--dark);
-  font-size: 2.5rem;
-  font-weight: 500;
-  transition: all 0.5s;
-}
-
-.navigation ul li a:hover {
-  color: #432015;
-}
-
-.navigation ul li button {
-  color: var(--white);
-  background: var(--azul);
-  border-radius: 10px;
-  padding: 8px 35px;
-  font-size: 2rem;
-  cursor: pointer;
-}
-
-.navigation ul li button:hover {
-  background: var(--azul-claro);
-}
-
-.principal{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-} */
-/* .container-product {
-    display: flex;;
-    align-items: center;
-    justify-content: center;
-    width: 800px;
-    height: 800px;
-    border: 2px solid #0000;
-    margin-top: 80px;
-} */
-/* 
-.price {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 450px;
-    height: 450px;
-    border-radius: 100%;
-    text-align: center;
-    background: #432015;
-    margin-top: 500px;
-    margin-left: -200px;
-} */
-
-
 
 body{
   margin: 0;
@@ -121,17 +20,9 @@ body{
 }
 
 
-/*.produto{
-    width: 650px;
-}
-
-.price-product {
-    font-size: 120px;
-    color: white;
-}*/
 
 .slider-container {
-  width: 100%;
+  width: 2000px;
   overflow: hidden;
   height: 700px;
 }
@@ -143,13 +34,14 @@ body{
 
 .slide {
   flex: 0 0 100%;
-  max-width: 100%;
+  width: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 24px;
   color: white;
-  height: 700px; /* Defina a altura fixa para os slides */
+ 
+  height: 700px;
 }
 
 .slider-wrapper input{
@@ -162,6 +54,20 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative; 
+}
+
+.top-element {
+  color: #000;
+  width: 700px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 30px;
+  position: absolute;
+  font-family: var(--font-family);
+  top: 0; 
+  left: 50%; 
+  transform: translateX(-50%); 
 }
 
 .price {
@@ -175,12 +81,12 @@ body{
   background: #432015;
   margin-top: 350px;
   margin-left: -100px;
+  font-family: var(--font-family);
 }
 
 .produto{
     width: 500px;
 }
-
 
 .price-product {
     font-size: 100px;
@@ -216,29 +122,32 @@ main{
   flex-direction: column; 
   align-items: center;
 }
-  /* Estilos para os botões de rádio */
-  .radio-buttons {
-    position: absolute;
-    bottom: 60px; /* Ajuste conforme necessário */
-    left: 50%; /* Posicionamento central horizontal */
-    transform: translateX(-50%);
-  }
+ 
+.radio-buttons {
+  position: absolute;
+  bottom: 60px;
+  left: 50%; 
+  transform: translateX(-50%);
+}
 
-  .radio-buttons label {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #ccc;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-right: 5px; /* Espaçamento entre os botões */
-  }
+.radio-buttons label {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 5px; 
+}
 
-  .radio-buttons input[type="radio"] {
-    display: none;
-  }
+.radio-buttons input[type="radio"] {
+  display: none;
+}
 
-  .radio-buttons input[type="radio"]:checked + label {
-    background-color: #555;
-    color: #fff;
-  }
+.radio-buttons input[type="radio"]:checked + label {
+  background-color: #555;
+  color: #fff;
+}
+
+
+
 
